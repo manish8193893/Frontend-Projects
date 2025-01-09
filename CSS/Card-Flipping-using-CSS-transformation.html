@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Card Flipping using CSS transformation</title>
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4334/4334039.png" type="image/x-icon">
+        <!-- import google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            h2{
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            .main{
+                display: flex;
+                justify-content: center;
+            }
+            .card{
+                width: 130px;
+                height: 130px;
+                margin: 2rem 1rem 0 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(111, 121, 3);
+                border-left: 10px solid orangered;
+                border-right: 10px solid orange;
+                color: white;
+                transition: transform 1s;
+                cursor: pointer;
+            }
+            .card:hover{
+                transform:rotateX(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Card Flipping using CSS transformation</h2>
+        <div class="main">
+            <div class="card">Flip-Card</div>
+            <div class="card">Flip-Card</div>
+            <div class="card">Flip-Card</div>
+        </div>
+    </body>
+</html>

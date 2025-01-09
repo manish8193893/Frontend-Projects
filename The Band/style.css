@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: rgb(8, 130, 170);
+    width: 100%;
+    height: 48px;
+}
+
+.navbar_innerbox1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.navbar_innerbox1 ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex; 
+    text-align: center; 
+}    
+
+.navbar_innerbox1 ul li{
+    color: white;
+    font-size: 1.2rem;
+    padding: 9px 16px;
+}
+
+.navbar_innerbox1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar_innerbox1 ul li:hover{
+    background-color: rgb(2, 1, 42);
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position:relative;
+    background-color: rgb(8, 130, 170);
+    min-width: 140px;
+    margin-top: 17px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: ease-out 0.3ms ;
+}
+
+.dropdown-content a:hover{
+    background-color: rgb(2, 1, 42);
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div.content{
+    margin-left: 25%;
+    padding: 1px 16px;
+}
+
+.dropdown-innerbox{
+    display: flex;
+}
+
+.dropdown .downarrow-icon{
+    margin-left: 6px;
+    margin-top: 3px;
+    font-size: 1rem;
+}
+
+.hero-section-image{
+    background-image: url(https://wallpapercave.com/wp/wp1810524.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-section-image-text{
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    left: 38%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.second-pannel{
+    background-color:whitesmoke;
+    padding-bottom: 90px;
+}
+
+.second-pannel-heading{
+    font-size: 1.9rem;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.second-pannel-subheading{
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+
+.second-pannel-about{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.second-pannel-about-text{
+    width: 58%;
+    text-align: justify;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+.second-pannel-image{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.disc{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 30px;
+}
+
+.second-pannel-image1{
+    margin-right: 30px;
+    height: fit-content;
+}
+
+.second-pannel-image11{
+    background-image: url(https://resources.tidal.com/images/0139e99b/856b/473b/9da8/578e12f747eb/640x640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 210px;
+    border-radius: 8px;
+    height: 230px;
+    cursor: pointer;
+}
+
+.second-pannel-image11:hover{
+    opacity: 0.8;
+}
+
+.second-pannel-image2{
+    justify-content: center;
+    margin-right: 30px;
+    height: fit-content;
+}
+
+.second-pannel-image22{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/13/Alan_Walker_Jimmy_Fallon_Show_2018.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    width: 210px;
+    height: 230px;
+    cursor: pointer;
+}
+
+.second-pannel-image22:hover{
+    opacity: 0.8;
+}
+
+.second-pannel-image3{
+    justify-content: center;
+    height: fit-content;
+}
+
+.second-pannel-image33{
+    background-image: url(https://resources.tidal.com/images/0139e99b/856b/473b/9da8/578e12f747eb/640x640.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 210px;
+    border-radius: 8px;
+    height: 230px;
+    cursor: pointer;
+}
+
+.second-pannel-image33:hover{
+    opacity: 0.8;
+}
+
+.third-pannel{
+    background-color: black;
+}
+
+.third-pannel-heading{
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 80px;
+}
+
+.third-pannel-subheading{
+    font-style: italic;
+    color: gray;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+.table-innerbox{
+    margin-top: 40px;
+    width: 800px;
+    height: 120px;
+    background-color: aliceblue;
+}
+
+.table-innerbox p{
+    height: 40px;
+    color: black;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    color: gray;
+}
+
+.table-innerbox p span{
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 3px 5px;
+    background-color: orangered;
+    color: white;
+}
+
+.third-pannel-image-box{
+    margin-top: 25px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.third-pannel-image-box-inner-box{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-pannel-image-box-inner-box-layer{
+    background-color: aliceblue;
+    width: 250px;
+}
+
+.third-pannel-image-box1-image{
+    background-image: url(https://wallpapercave.com/wp/K6xfc2P.jpg);
+    width: 250px;
+    height: 210px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.third-pannel-image-box1-image:hover{
+    opacity: 0.6;
+}
+
+.third-pannel-image1-p1{
+    font-weight: lighter;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.third-pannel-image1-p2{
+    color: gray;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.third-pannel-image1-p3{
+    text-align: left;
+    margin-top: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.button1{
+    padding: 8px 16px;
+    background-color: black;
+    font-size: medium;
+    color: white;
+    border: none;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button1:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: black;
+}
+
+.contact{
+    text-align: center;
+    margin-top: 80px;
+    letter-spacing: 5px;
+    font-size: 1.9rem;
+}
+
+.fan-text{
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    margin-top: 20px;
+}
+
+.fourth-pannel-firstbox{
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 90px;
+    justify-content: center;
+}
+
+.fourth-pannel-secondbox{
+    display: flex;
+    width: 800px;
+}
+
+.addressbox{
+    width: 49.99%;
+}
+
+.addressbox-text{
+    padding-left: 10px;
+}
+
+.location{
+    display: flex;
+    justify-content: left;
+    line-height: 30px;
+}
+
+.phone{
+    display: flex;
+    justify-content: left;
+    line-height: 30px;
+}
+
+.email{
+    display: flex;
+    justify-content: left;
+    line-height: 30px;
+}
+
+.detail-box{
+    width: 49.99%;
+}
+
+.two-boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    width: 47%;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.mail{
+    width: 47%;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.message{
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 13px;
+    outline: none;
+}
+
+.button2{
+    background-color: black;
+    color: white;
+    float: right;
+    padding: 8px 16px;
+    border: none;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.button2:hover{
+    cursor: pointer;
+    background-color: gray;
+    color: black;
+}
+
+.fifth-pannel{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/60010dab1a7b04326b7d9d41/9488bfba-5e37-4528-927b-01d5e0a15f8b/St+Regis+DronChi_Cable0095s.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.sixth-pannel{
+    background-color: rgb(142, 127, 10);
+    text-align: center;
+    color: wheat;
+    font-size: larger;
+    margin-top: 10px;
+    padding-top: 48px;
+    width: 100%;
+    height: 100px;
+    font-style: italic;
+}

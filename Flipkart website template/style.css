@@ -1,0 +1,733 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(215, 213, 213);
+}
+
+.navbar{
+    background-color: white;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border:hover{
+    border: 1px solid rgb(178, 176, 176);
+}
+
+.navbar-inner-div{
+    height: fit-content;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    background-image: url(img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    margin-left: 37px;
+    margin-right: 25px;
+}
+
+.search-bar{
+    width: 45%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search-icon{
+    width: 7%;
+    height: 40px;
+    color: gray;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background-color: rgba(161, 192, 242, 0.375);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid gray;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.search-field{
+    width: 93%;
+    height: 40px;
+}
+
+.search-field input{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 1.1rem;
+    background-color: rgba(161, 192, 242, 0.375);
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.search-field input:focus{
+    outline: none;
+}
+
+.login-box a{
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.login-box a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.login-box-contact-icon{
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+
+.login-box-text{
+    font-size: 1.2rem;
+    padding-right: 5px;
+}
+
+.login-box-arrow{
+    font-size: 0.6rem;
+    margin-top: 3px;
+    padding-right: 5px;
+}
+
+.cart a{
+    width: 80px;
+    height: 40px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.cart{
+    border-radius: 8px;
+}
+
+.cart-text a{
+    font-size: 1.1rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.home a{
+    font-size: 1.2rem;
+    width: 190px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    color: black;
+}
+.home{
+    border-radius: 8px;
+}
+
+.home-text a{
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+
+.three-dot{
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: lighter;
+    width: 43px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.three-dot:hover{
+    background-color: rgb(227, 228, 229);
+    opacity: 0.7;
+}
+
+.hero-section{
+    display: block;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 19px;
+    background-color: 1px solid red;
+}
+.first-pannel{
+    width: 98.5%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.807);
+}
+
+.first-pannel-box1{
+    width: 130px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-pannel-box1:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.first-pannel-box1-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/grocery.webp);
+    background-size: cover;
+}
+
+.first-pannel-box1-text{
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.first-pannel-box2-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/mobile.webp);
+    background-size: cover;
+}
+.first-pannel-box3-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/fashion.webp);
+    background-size: cover;
+}
+.first-pannel-box4-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/electronics.webp);
+    background-size: cover;
+}
+.first-pannel-box5-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/home&furniture.webp);
+    background-size: cover;
+}
+.first-pannel-box6-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/appliences.webp);
+    background-size: cover;
+}
+.first-pannel-box7-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/travel.webp);
+    background-size: cover;
+}
+.first-pannel-box8-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/beauty&toys.webp);
+    background-size: cover;
+}
+.first-pannel-box9-image{
+    width: 64px;
+    height: 64px;
+    margin-left: 4px;
+    background-image: url(img/two-vehicels.webp);
+    background-size: cover;
+}
+
+.second-pannel-image{
+    width: 98.5%;
+    height: 217px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(img/horizontal-image.png);
+    background-size: cover;
+}
+
+.third-pannel{
+    width: 98.5%;
+    height: 320px;
+    background-color: rgba(255, 255, 255, 0.697);
+    margin-top: 15px;
+}
+
+.third-pannel-inner-box-top-text{
+    width: 100%;
+    padding-left: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 64px;
+}
+
+.third-pannel-inner-box-top-text-lower-box{
+    width: 100%;
+    height: 236px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lower-box1{
+    width: 172px;
+    height: 224px;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.824);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-box1-image{
+    background-image: url(img/shoes1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box2-image{
+    background-image: url(img/shoes2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box3-image{
+    background-image: url(img/girl-dress.webp);
+    background-size: cover;
+    margin-left: 12px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box4-image{
+    background-image: url(img/men-dress.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box5-image{
+    background-image: url(img/kurta.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box6-image{
+    background-image: url(img/t-shirt.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+
+.lower-box1-image:hover,.lower-box2-image:hover,.lower-box3-image:hover,.lower-box4-image:hover,.lower-box5-image:hover,.lower-box6-image:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.lower-box1-text1{
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.lower-box1-text2{
+    margin-top: 5px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.fourth-pannel{
+    width: 98.5%;
+    height: 248px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.697);
+}
+
+.fourth-pannel-inner-box{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fourth-pannel-image1{
+    background-image: url(img/vivot2.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.fourth-pannel-image1:hover{
+    transform: scaleY(1.05);
+}
+
+.fourth-pannel-image2{
+    background-image: url(img/motog54.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.fourth-pannel-image2:hover{
+    transform: scaleY(1.05);
+}
+
+.fourth-pannel-image3{
+    background-image: url(img/pocom6.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.fourth-pannel-image3:hover{
+    transform: scaleY(1.05);
+}
+
+.fifth-pannel{
+    width: 98.5%;
+    height: 248px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.697);
+}
+
+.fifth-pannel-inner-box{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fifth-pannel-image1{
+    background-image: url(img/best-selling-iron.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.fifth-pannel-image1:hover{
+    transform: scaleY(1.05);
+}
+
+.fifth-pannel-image2{
+    background-image: url(img/washing-machine.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.fifth-pannel-image2:hover{
+    transform: scaleY(1.05);
+}
+
+.fifth-pannel-image3{
+    background-image: url(img/ceilling-fan.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.fifth-pannel-image3:hover{
+    transform: scaleY(1.05);
+}
+
+.sixth-pannel{
+    width: 98.5%;
+    height: 248px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.697);
+}
+
+.sixth-pannel-inner-box{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sixth-pannel-image1{
+    background-image: url(img/painting.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.sixth-pannel-image1:hover{
+    transform: scaleY(1.05);
+}
+
+.sixth-pannel-image2{
+    background-image: url(img/bedsheet.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.sixth-pannel-image2:hover{
+    transform: scaleY(1.05);
+}
+
+.sixth-pannel-image3{
+    background-image: url(img/tools.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.sixth-pannel-image3:hover{
+    transform: scaleY(1.05);
+}
+
+.footer{
+    background-color: rgba(0, 0, 0, 0.814);
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+}
+
+.footer-inner-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+}
+
+.footer-first-inner-div{
+    width: 70%;
+    margin-top: 40px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items:normal;
+    border-right: 1px solid gray;
+}
+
+.inner-div1{
+    width: 20%;
+    height: fit-content;
+}
+
+.inner-div1 h3{
+    color: gray;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.inner-div1 p{
+    margin-top: 10px;
+    color: white;
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+.inner-div1 a{
+    text-decoration: none;
+}
+
+.inner-div1 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-second-inner-div{
+    width: 20%;
+    margin-top: 40px;
+    height: fit-content;
+    display: flex;
+    align-items: normal;
+    justify-content: space-around;
+}
+
+.inner-div2{
+    width: 100%;
+    height: fit-content;
+}
+
+.inner-div2 h3{
+    color: gray;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+.inner-div2 p{
+    color: white;
+    text-align: left;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.lower-box1-image1{
+    background-image: url(img/bangles.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box2-image2{
+    background-image: url(img/smartring.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box3-image3{
+    background-image: url(img/smartwatch.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box4-image4{
+    background-image: url(img/laptop.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box5-image5{
+    background-image: url(img/fridge.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+.lower-box6-image6{
+    background-image: url(img/sandle.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 142px;
+    height: 142px;
+}
+
+.lower-box1-image1:hover,.lower-box2-image2:hover,.lower-box3-image3:hover,.lower-box4-image4:hover,.lower-box5-image5:hover,.lower-box6-image6:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.sixth-pannel-image11{
+    background-image: url(img/asus.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.sixth-pannel-image11:hover{
+    transform: scaleY(1.05);
+}
+
+.sixth-pannel-image22{
+    background-image: url(img/lighting.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.sixth-pannel-image22:hover{
+    transform: scaleY(1.05);
+}
+
+.sixth-pannel-image33{
+    background-image: url(img/4ksmarttv.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 420px;
+    height: 228px;
+}
+
+.sixth-pannel-image33:hover{
+    transform: scaleY(1.05);
+}

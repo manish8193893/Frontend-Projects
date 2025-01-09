@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="./assets/Spotify-logo-png.webp" type="image/x-icon">
+    <!-- import google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- import icon from font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- import bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- link style-sheet css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div class="main">
+
+        <!-- -------------------------------------HEADER---------------------------------------- -->
+        <header>
+            <nav class="navbar">
+                <!-- This navbar is divided into two parts -->
+
+                <!-- Left part and Right part -->
+                <div class="container-inner-box">
+
+                    <!-- Left side of navbar -->
+                    <div class="left-side-navbar">
+                        <!-- left part further divided into two parts -->
+
+                        <!-- FIRST PART (Extra features and Home button) -->
+                        <div class="left-side-navbar-first-column">
+                            <div class="three-dots">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <div class="left-arrow">
+                                <i class="fa-solid fa-chevron-left" ></i>
+                            </div>
+                            <div class="right-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="home-icon">
+                                <i class="fa-solid fa-house" title="Home"></i>
+                            </div>
+                        </div>
+    
+                        <!-- SEOCND PART (Music Search) -->
+                        <div class="left-side-navbar-second-column">
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass" title="Search"></i>
+                            </div>
+                            <div class="left-side-navbar-second-column-text">
+                                <input type="search" placeholder="What do you want to play?">
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-inbox inbox1" title="Browse"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT side of navbar -->
+                    <div class="right-side-navbar">
+                        
+                        <!-- Explore Premium button -->
+                        <div class="d-grid gap-2 d-md-block">
+                            <button type="button" class="btn" title="Upgrade to Premium">Explore Premium</button>
+                        </div>
+
+                        <!-- Profile logo -->
+                        <div class="profile-logo">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-danger" data-bs-toggle="dropdown" aria-expanded="false">
+                                   <div class="logo"></div>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Account<i class="fa-solid fa-up-right-from-square account"></i></a></li>
+                                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                                  <li><a class="dropdown-item" href="#">Upgrade to Premium<i class="fa-solid fa-up-right-from-square premium"></i></a></li>
+                                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                                </ul>
+                              </div>
+                        </div>
+
+                        <!-- NOTIFICATION and USER icon-->
+                        <div class="notification-bell">
+                            <i class="fa-regular fa-bell" title="What's New"></i>
+                        </div>
+                        <div class="user">
+                            <i class="fa-solid fa-users" title="Friend Activity"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+        </header>
+
+        <!--  -------------------------------HERO SECTION---------------------------------------- -->
+
+        <!-- This hero section divided into two parts -->
+        <div class="hero-section">
+            
+            <!-- ------------------LEFT PART OF HERO SECTION--------------- -->
+
+            <!-- Your personal interest -->
+            <aside>
+                <!-- FIRST PART -->
+
+                <!-- Your Library -->
+                <div class="library">
+                    <div class="library-first">
+                        <div class="library-icon">
+                            <i class="fa-solid fa-layer-group" title="Collapes Your Library"></i>
+                        </div>
+                        <div class="library-text">Your Library</div>
+                    </div>
+                    <div class="library-second">
+                        <div class="plus-icon">
+                            <i class="fa-solid fa-plus" title="Create playlist or folder"></i>
+                        </div>
+                        <div class="library-right-arrow">
+                            <i class="fa-solid fa-arrow-right" title="Show more"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECOND PART -->
+                <!-- For your Playlist and Podcast option -->
+                <div class="library-down-options">
+
+                    <div class="library-down-first-options">
+                        <button>Playlists</button>
+                        <button>Podcasts</button>
+                    </div>
+                    <div class="library-down-second-options">
+                        <div class="search-in-library">
+                            <i class="fa-solid fa-magnifying-glass" title="Search in Your Library"></i>
+                        </div>
+                        <div class="grid-layout">
+                            Recents
+                            <i class="fa-solid fa-border-all"></i>
+                        </div>
+                    </div>
+
+                <!-- Your favourite Playlist and Podcast collection with images-->
+                    <div class="libaray-bottom-box">
+                        <div class="libaray-bottom-box1 bottom" title="Liked Music"></div>
+                        <div class="libaray-bottom-box2 bottom" title="English Music"></div>
+                        <div class="libaray-bottom-box3 bottom" title="Your Episodes"></div>
+                        <div class="libaray-bottom-box4 bottom" title="Raja Hindustani"></div>
+                        <div class="libaray-bottom-box5 bottom" title="Haryanvi Songs"></div>
+                        <div class="libaray-bottom-box6 bottom" title="Live Events"></div>
+                        <div class="libaray-bottom-box7 bottom" title="Instrumental Songs"></div>
+                        <div class="libaray-bottom-box8 bottom" title="Liked Music"></div>
+                        <div class="libaray-bottom-box9 bottom" title="English Music"></div>
+                        <div class="libaray-bottom-box10 bottom" title="Your Episodes"></div>
+                        <div class="libaray-bottom-box11 bottom" title="Raja Hindustani"></div>
+                        <div class="libaray-bottom-box12 bottom" title="Haryanvi Songs"></div>
+                        <div class="libaray-bottom-box13 bottom" title="Live Events"></div>
+                        <div class="libaray-bottom-box14 bottom" title="Instrumental Songs"></div>
+                        <div class="libaray-bottom-box15 bottom" title="Liked Music"></div>
+                        <div class="libaray-bottom-box16 bottom" title="English Music"></div>
+                        <div class="libaray-bottom-box17 bottom" title="Your Episodes"></div>
+                        <div class="libaray-bottom-box18 bottom" title="Raja Hindustani"></div>
+                        <div class="libaray-bottom-box19 bottom" title="Haryanvi Songs"></div>
+                        <div class="libaray-bottom-box20 bottom" title="Live Events"></div>
+                        <div class="libaray-bottom-box21 bottom" title="Instrumental Songs"></div>
+                    </div>
+
+                </div>
+
+            </aside>
+
+            <!-- ----------------RIGHT PART OF HERO SECTION-------------- -->
+
+            <main>
+
+                <!-- navbar options a/c to Your mood -->
+                <div class="top">
+                    <a href="">All</a>
+                    <a href="">Music</a>
+                    <a href="">Podcasts</a>
+                </div>
+
+                <!-- Your music taste -->
+                <div class="outer-box">
+                    <div class="outer-box1">
+                        <div class="outer-box-image1"></div>
+                        <div class="outer-box-text">Hindi old Songs</div>
+                    </div>
+                    <div class="outer-box1">
+                        <div class="outer-box-image2"></div>
+                        <div class="outer-box-text">Kabil Movie - Songs</div>
+                    </div>
+                    <div class="outer-box1">
+                        <div class="outer-box-image3"></div>
+                        <div class="outer-box-text">Your Episodes</div>
+                    </div>
+                    <div class="outer-box1">
+                        <div class="outer-box-image4"></div>
+                        <div class="outer-box-text">English Songs</div>
+                    </div>
+                    <div class="outer-box1">
+                        <div class="outer-box-image5"></div>
+                        <div class="outer-box-text">Live Events</div>
+                    </div>
+                    <div class="outer-box1">
+                        <div class="outer-box-image6"></div>
+                        <div class="outer-box-text">Haryanvi Songs</div>
+                    </div>
+                    <div class="outer-box1">
+                        <div class="outer-box-image7"></div>
+                        <div class="outer-box-text">Raja Hindustani</div>
+                    </div>
+                    <div class="outer-box1">
+                        <div class="outer-box-image8"></div>
+                        <div class="outer-box-text">Instrumental Songs</div>
+                    </div>
+                </div>
+
+
+                <!-- First row of Singer list -->
+                <div class="actor-list">
+
+                    <!-- Highlights a/c to your music taste  -->
+                    <a href="#" class="heading"><h5>Made for Manish Mehra</h5></a>
+
+                    <!-- Your favourite singers -->
+                    <div class="main-actor-list">
+
+                        <!-- Card for storing the info about singer i.e. image & name -->
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image1 actor-list-outer-box-image"></div>
+                            <a href="#">Your weekly mixtape of fresh music</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image2 actor-list-outer-box-image"></div>
+                            <a href="#">Pritam,Kumar Sanu,Atif Aslam and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image3 actor-list-outer-box-image"></div>
+                            <a href="#">Kishore kumar,Anup Ghoshal,Lata...</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image4 actor-list-outer-box-image"></div>
+                            <a href="#">Kaka,Maninder Buttar,Akhil and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image5 actor-list-outer-box-image"></div>
+                            <a href="#">Anuradha Paudwal,Lakhbit Singh</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image6 actor-list-outer-box-image"></div>
+                            <a href="#">PS Polist and Raju Punjabi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second row of singer list -->
+                <div class="actor-list">
+                    <a href="#" class="heading"><h5>Trending Superstar</h5></a>
+                    <div class="main-actor-list">
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image24 actor-list-outer-box-image"></div>
+                            <a href="#">Your weekly mixtape of fresh music</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image7 actor-list-outer-box-image"></div>
+                            <a href="#">Pritam,Kumar Sanu,Atif Aslam and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image8 actor-list-outer-box-image"></div>
+                            <a href="#">Kishore kumar,Anup Ghoshal,Lata...</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image9 actor-list-outer-box-image"></div>
+                            <a href="#">Kaka,Maninder Buttar,Akhil and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image10 actor-list-outer-box-image"></div>
+                            <a href="#">Anuradha Paudwal,Lakhbit Singh</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image11 actor-list-outer-box-image"></div>
+                            <a href="#">PS Polist and Raju Punjabi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third row of singer list -->
+                <div class="actor-list">
+                    <a href="#" class="heading"><h5>Everyone choice</h5></a>
+                    <div class="main-actor-list">
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image12 actor-list-outer-box-image"></div>
+                            <a href="#">Your weekly mixtape of fresh music</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image13 actor-list-outer-box-image"></div>
+                            <a href="#">Pritam,Kumar Sanu,Atif Aslam and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image14 actor-list-outer-box-image"></div>
+                            <a href="#">Kishore kumar,Anup Ghoshal,Lata...</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image15 actor-list-outer-box-image"></div>
+                            <a href="#">Kaka,Maninder Buttar,Akhil and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image16 actor-list-outer-box-image"></div>
+                            <a href="#">Anuradha Paudwal,Lakhbit Singh</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image17 actor-list-outer-box-image"></div>
+                            <a href="#">PS Polist and Raju Punjabi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth row of singer list -->
+                <div class="actor-list">
+                    <a href="#" class="heading"><h5>Bollywood Singer</h5></a>
+                    <div class="main-actor-list">
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image18 actor-list-outer-box-image"></div>
+                            <a href="#">Your weekly mixtape of fresh music</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image19 actor-list-outer-box-image"></div>
+                            <a href="#">Pritam,Kumar Sanu,Atif Aslam and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image20 actor-list-outer-box-image"></div>
+                            <a href="#">Kishore kumar,Anup Ghoshal,Lata...</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image21 actor-list-outer-box-image"></div>
+                            <a href="#">Kaka,Maninder Buttar,Akhil and more</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image22 actor-list-outer-box-image"></div>
+                            <a href="#">Anuradha Paudwal,Lakhbit Singh</a>
+                        </div>
+                        <div class="actor-list-outer-box">
+                            <div class="actor-list-outer-box-image23 actor-list-outer-box-image"></div>
+                            <a href="#">PS Polist and Raju Punjabi</a>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <!-- ------------------------------Music Player Portion----------------------------- -->
+
+        <footer>
+            <!-- This music player portion divided into three parts -->
+
+            <!-- First part is left side portion (currently playing music)  -->
+            <div class="current-playing-music">
+                <div class="current-playing-music-image"></div>
+                <div class="current-playing-music-name">
+                    <a href="#">Faded</a>
+                    <a href="#">Alan Walker</a>
+                </div>
+                <div class="right-tick-icon"><i class="fa-solid fa-circle-check" title="Add to Playlist"></i></div>
+            </div>
+
+            <!-- Second part is center portion (for music player controls) -->
+            <div class="music-player-controls">
+                <i class="fa-solid fa-shuffle" title="Enable fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step" title="Previous"></i>
+                <i class="fa-solid fa-circle-play" title="Play"></i>
+                <i class="fa-solid fa-forward-step" title="Next"></i>
+                <i class="fa-solid fa-repeat" title="Enable repeat"></i>
+            </div>
+            <!-- Third part is right portion (for extra feature or extra controls) -->
+            <div class="extra-music-player-controls">
+                <i class="fa-regular fa-square-caret-right" title="Now playing view"></i>
+                <i class="fa-solid fa-music" title="Lyrics"></i>
+                <i class="fa-solid fa-bars" title="Queue"></i>
+                <i class="fa-solid fa-computer" title="Connect to a device"></i>
+                <i class="fa-solid fa-volume-high" title="Volume"></i>
+                <i class="fa-regular fa-window-restore" title="Open Miniplayer"></i>
+                <i class="fa-solid fa-up-right-and-down-left-from-center" title="Full screen"></i>
+            </div>
+        </footer>
+
+    </div>
+    <!-- import bootstrap JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/16566/16566085.png" type="image/x-icon">
+        <title>Gallery Image</title>
+        <style>
+
+            *{
+                box-sizing: border-box;
+            }
+
+            div.gallery{
+                border: 1px solid #5555;
+            }
+
+            div.gallery:hover{
+                border: 1px solid black;
+            }
+
+            div.gallery img{
+                width: 100%;
+                height: auto;
+            }
+            div.desc{
+                padding: 15px;
+                text-align: center;
+            }
+
+            .responsive{
+                width: 24.99999%;
+                padding: 0px 6px;
+                float: left;
+            }
+
+            @media screen and (max-width:900px){
+                .responsive{
+                    width: 49.99999%;
+                    margin: 6px 0px;
+                }
+            }
+
+            @media screen  and (max-width:700px){
+                .responsive{
+                    width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body style="font-family: Verdana;">
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="https://www.w3schools.com/css/img_5terre.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Beach_image" width="600" height="400">
+                </a>
+                <div class="desc">Manish</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="https://www.w3schools.com/css/img_forest.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_forest.jpg" alt="forest" width="600" height="400">
+                </a>
+                <div class="desc">Mehra</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="https://www.w3schools.com/css/img_lights.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_lights.jpg" alt="lights" width="600" height="400">
+                </a>
+                <div class="desc">Fiza</div>
+            </div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a href="https://www.w3schools.com/css/img_mountains.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="mountain" width="600" height="400">
+                </a>
+                <div class="desc">Khanam</div>
+            </div>    
+        </div>
+        <div class="clearfix"></div>
+    </body>
+</html>
